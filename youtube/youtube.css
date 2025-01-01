@@ -1,0 +1,82 @@
+*{
+  font-family: Roboto;
+  margin: 0;
+}
+.youtubebox{
+  padding: 80px 20px 80px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+  background-color: rgb(249, 249, 249);
+}
+@media (max-width: 750px) {
+  .youtubebox{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+  .youtubebox{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .youtubebox{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+#videobox{
+  display: inline-block;
+  vertical-align: top;
+}
+#thumbnail{
+  width: 100%;
+  border-radius: 8px;
+}
+#videodetails{
+  margin: 7px 0;
+}
+.details{
+  display: inline-block;
+  width: 80%;
+}
+.details p{
+  margin: 0;
+}
+#vidTitle{
+  font-weight: 500;
+  font-size: 16px;
+}
+#vidCreator{
+  margin: 5px 0;
+}
+#vidCreator , #vidStats{
+  color: gray;
+  font-size: 14px;
+}
+.detailsimg{
+  width: 10%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.detailsimg img{
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  margin: 0;
+}
+.thumbnailbox{
+  position: relative;
+}
+.video-time{
+  font-family: Roboto;
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 10px;
+  right: 5px;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 5px;
+}
